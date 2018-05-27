@@ -2,6 +2,44 @@
 
     height:450px;
 }
+div#contenedor{
+    background:#009edf;
+    overflow:hidden;
+}
+div#titulo{
+    margin-left:35%;
+    margin-top:2%;
+    margin-bottom:2%;
+    color:white;
+}
+div#izquierda{ 
+    float:left;
+    padding:10px;
+    color:white;
+    height:250px;
+    width:33%;
+    margin:2px;
+    margin-left: 2px;
+    background:#009edf;
+}
+div#derecha{
+    float:left;
+    padding:10px;
+    color:white;
+    width:33%;
+    height:250px;
+    margin:2px;
+    background:#009edf;
+}
+div#centro{
+    float:left;
+    padding:10px;
+    color:white;
+    width:33%;
+    height:250px;
+    margin:2px;
+    background:#009edf;
+}
 #centroButton{
 
     text-align: center;

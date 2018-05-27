@@ -81,11 +81,31 @@
         </div>
         <!--CAROUSEL-->
 
+        <div id="contenedor">
+            <div id="titulo">
+                <h1>¿Por qué elegir DKD?</h1>
+            </div>
+            
+            <div id="izquierda">
+                <h1>El mejor precio y servicio</h1>
+                <p>Los viajeros con un presupuesto apreciarán nuestros precios con todo incluido y un servicio personalizado.</p>
+            </div>
+
+            <div id="centro">
+                <h1>Precios todo incluido, sin sorpresas</h1>
+                <p>En DKD, los precios cotizados incluyen todos los cargos. No hay sorpresas desagradables cuando recoges tu auto, ¡garantizado!</p>
+            </div>
+            
+            <div id="derecha">
+                <h1>La mejor flota de alquiler en Chile</h1>
+                <p>DKD tiene un vehículo de último modelo para satisfacer todas las necesidades: autos de todos los tamaños, camionetas, minivans y furgones de carga.</p>
+            </div>
+        </div>
         <!--PIE DE PAGINA-->
         <footer>
             <p>© 2018<a style="color:#0a93a6; text-decoration:none;" href="#"> DKD-Ingenieria Informática</a>, Derechos Reservados.</p>
         </footer>
-        
+
         <!--LINKS SCRIPTS-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
