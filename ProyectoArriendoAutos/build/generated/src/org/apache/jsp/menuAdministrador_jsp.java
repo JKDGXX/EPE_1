@@ -48,19 +48,11 @@ public final class menuAdministrador_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("<html lang=\"es\">\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>DDK-Menu</title>\n");
+      out.write("        <title>DKD-Menu</title>\n");
       out.write("\n");
       out.write("        <!--LINKS BOOTSTRAP Y CSS LOCAL-->\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\" crossorigin=\"anonymous\">\n");
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/estiloMenuAdministrador.css\">\n");
-      out.write("        <!--instancia-->\n");
-      out.write("        ");
-
-            consultas c = new consultas();
-
-            String user = request.getParameter("usuario");
-            String pass = request.getParameter("contrasena");
-        
       out.write("\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
@@ -70,7 +62,7 @@ public final class menuAdministrador_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("        <!--BARRA DE NAVEGACION-->\n");
       out.write("        <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n");
       out.write("            <a class=\"navbar-brand\" href=\"#\">\n");
-      out.write("                <img src=\"img/icono/icono1.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">DDK</a>\n");
+      out.write("                <img src=\"img/icono/logo.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">DKD</a>\n");
       out.write("            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n");
       out.write("                <span class=\"navbar-toggler-icon\"></span>\n");
       out.write("            </button>\n");
@@ -101,11 +93,11 @@ public final class menuAdministrador_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("        <!--BARRA DE NAVEGACION-->\n");
       out.write("\n");
       out.write("        <!--FORMULARIO INGRESO CLIENTE-->\n");
-      out.write("       \t<div  class=\"container\">\n");
+      out.write("       \t<div  class=\"container\" id=\"posicionFormulario\">\n");
       out.write("            <div class=\"row main\">\n");
       out.write("                <div class=\"main-login main-center\">\n");
       out.write("                    <h5 style=\"text-align: center;\">Ingreso De Clientes</h5>\n");
-      out.write("                    <form id=\"formularioCliente\" method=\"post\" action=\"#\">\n");
+      out.write("                    <form method=\"post\" action=\"ingresoCliente\">\n");
       out.write("\n");
       out.write("                        <div class=\"form-group\">\n");
       out.write("                            <label for=\"nombre\" class=\"cols-sm-2 control-label\">Nombre</label>\n");
@@ -179,9 +171,10 @@ public final class menuAdministrador_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("       <!--PIE DE PAGINA-->\n");
+      out.write("        <footer>\n");
+      out.write("            <p>© 2018<a style=\"color:#0a93a6; text-decoration:none;\" href=\"#\"> DKD-Ingenieria Informática</a>, Derechos Reservados.</p>\n");
+      out.write("        </footer>\n");
       out.write("        <!--LINKS SCRIPTS-->\n");
       out.write("        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n");
       out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n");

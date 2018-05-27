@@ -4,7 +4,7 @@
 
 
 <head lang="es">
-    <title>DDK Arriendo De Vehículos</title>
+    <title>DKD Arriendo De Vehículos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--LINKS BOOTSTRAP Y CSS LOCAL-->
@@ -18,7 +18,7 @@
 <!--BARRA DE NAVEGACION-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
-        <img src="img/icono/icono1.png" width="30" height="30" class="d-inline-block align-top" alt="">DDK</a>
+        <img src="img/icono/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">DKD</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -83,7 +83,7 @@
 
 <!--PIE DE PAGINA-->
 <footer>
-    <p>© 2018<a style="color:#0a93a6; text-decoration:none;" href="#"> DDK-Ingenieria Informatica</a>, Derechos Reservados.</p>
+    <p>© 2018<a style="color:#0a93a6; text-decoration:none;" href="#"> DKD-Ingenieria Informática</a>, Derechos Reservados.</p>
 </footer>
 
 
