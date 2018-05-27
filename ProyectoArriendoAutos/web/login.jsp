@@ -4,7 +4,7 @@
 
 
 <head lang="es">
-    <title>DDK Arriendo De Autos</title>
+    <title>DDK Arriendo De Vehículos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--LINKS BOOTSTRAP Y CSS LOCAL-->
