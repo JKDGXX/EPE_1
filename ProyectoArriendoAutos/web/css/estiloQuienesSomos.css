@@ -1,0 +1,60 @@
+#altura_img_carrousel{
+
+    height:377px;
+}
+div#contenedor{
+    background:#009edf;
+    overflow:hidden;
+}
+div#centro{
+    color:white;
+    width:50%;
+    padding:20px;
+    margin:0 auto;
+    background:#009edf;
+}
+#centroButton{
+
+    text-align: center;
+
+}
+#footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#F1F0F0;;
+    color: black;
+    text-align: center;
+    padding: 25px;
+}
+#opcionesAdministrador{
+    position: absolute;
+    right: 3px;
+}
+
+body, html{
+    height: 100%;
+    font-family: 'Oxygen', sans-serif;
+    background-size: cover;
+}
+
+.main{
+    margin:50px 15px;
+}
+
+footer{
+    background-color: #f5f4f4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+    padding: 40px;
+}
+
+footer p {
+    color:black;
+    margin: 0px;
+    line-height: 100%;
+}

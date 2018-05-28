@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class quienesSomos_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -42,6 +42,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -50,7 +51,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        <!--LINKS BOOTSTRAP Y CSS LOCAL-->\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\" crossorigin=\"anonymous\">\n");
-      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/estiloIndex.css\">\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/estiloQuienesSomos.css\">\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <!--BARRA DE NAVEGACION-->\n");
@@ -95,21 +96,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </ol>\n");
       out.write("            <div class=\"carousel-inner\">\n");
       out.write("                <div class=\"carousel-item active\">\n");
-      out.write("                    <img class=\"d-block w-100\" id=\"altura_img_carrousel\" src=\"img/carousel/img1.png\" alt=\"First slide\">\n");
-      out.write("                </div>\n");
-      out.write("                <div class=\"carousel-item\">\n");
-      out.write("                    <img class=\"d-block w-100\" id=\"altura_img_carrousel\" src=\"img/carousel/img2.png\" alt=\"Second slide\">\n");
-      out.write("                    <div class=\"carousel-caption d-none d-md-block\">\n");
-      out.write("                        <h5>No hay limites</h5>\n");
-      out.write("                        <p>Llega a donde tu quieras.</p>\n");
-      out.write("                    </div>\n");
-      out.write("                </div>\n");
-      out.write("                <div class=\"carousel-item\">\n");
-      out.write("                    <img class=\"d-block w-100\" id=\"altura_img_carrousel\" src=\"img/carousel/img3.jpg\" alt=\"Third slide\">\n");
-      out.write("                    <div class=\"carousel-caption d-none d-md-block\">\n");
-      out.write("                        <h5>Automóviles Electricos</h5>\n");
-      out.write("                        <p>También nos preocupamos de cuidar nuestro planeta.</p>\n");
-      out.write("                    </div>\n");
+      out.write("                    <img class=\"d-block w-100\" id=\"altura_img_carrousel\" src=\"img/carouselQuienesSomos/quienesSomos.png\" alt=\"First slide\">\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
       out.write("            <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n");
@@ -124,26 +111,32 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!--CAROUSEL-->\n");
       out.write("\n");
       out.write("        <div id=\"contenedor\">\n");
-      out.write("            <div id=\"titulo\">\n");
-      out.write("                <h1>¿Por qué elegir DKD?</h1>\n");
-      out.write("            </div>\n");
-      out.write("            \n");
-      out.write("            <div id=\"izquierda\">\n");
-      out.write("                <h1>El mejor precio y servicio</h1>\n");
-      out.write("                <p>Los viajeros con un presupuesto apreciarán nuestros precios con todo incluido y un servicio personalizado.</p>\n");
-      out.write("            </div>\n");
-      out.write("\n");
       out.write("            <div id=\"centro\">\n");
-      out.write("                <h1>Precios todo incluido, sin sorpresas</h1>\n");
-      out.write("                <p>En DKD, los precios cotizados incluyen todos los cargos. No hay sorpresas desagradables cuando recoges tu auto, ¡garantizado!</p>\n");
-      out.write("            </div>\n");
-      out.write("            \n");
-      out.write("            <div id=\"derecha\">\n");
-      out.write("                <h1>La mejor flota de alquiler en Chile</h1>\n");
-      out.write("                <p>DKD tiene un vehículo de último modelo para satisfacer todas las necesidades: autos de todos los tamaños, camionetas, minivans y furgones de carga.</p>\n");
+      out.write("                <h1>Nuestra Empresa</h1>\n");
+      out.write("                <p>\n");
+      out.write("                    DKD es una compañía dedicada al arriendo de vehículos desde 1986. Más de 30 años de experiencia avalan nuestro trabajo, consolidándonos como uno de los principales rent a car de la ciudad de Santiago.\n");
+      out.write("                    <br>\n");
+      out.write("                    <br>\n");
+      out.write("                    Nos enorgullecemos de ser una empresa chilena que ha ganado la confianza de innumerables turistas nacionales y extranjeros y de algunas de las más importantes empresas del país, como también diversos organismos gubernamentales.\n");
+      out.write("                    <br>\n");
+      out.write("                    <br>\n");
+      out.write("                    <h2>Nuestro compromiso:</h2>\n");
+      out.write("                    <br>\n");
+      out.write("                    -Ofrecer una flota variada y en excelente estado<br>\n");
+      out.write("                    -Ofrecer los mejores precios a quienes reserven con tiempo<br>\n");
+      out.write("                    -Política de transparencia: nos comprometemos a no tener cobros ocultos<br>\n");
+      out.write("                    -Servicio 24/365: estamos siempre disponibles para atenderlo, donde sea que esté<br>\n");
+      out.write("                    -Con DKD, puedes manejar tranquilo.<br>\n");
+      out.write("                    <br>\n");
+      out.write("                    <h2>Nuestros servicios:</h2>\n");
+      out.write("                    <br>\n");
+      out.write("                    -Arriendos a corto plazo para personas naturales y empresas<br>\n");
+      out.write("                    -Convenios con empresas para arriendos a corto plazo o mensuales<br>\n");
+      out.write("                    -Arriendos de largo plazo (leasing operativo)<br>\n");
+      out.write("                </p>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
-      out.write("        \n");
+      out.write("\n");
       out.write("        <!--PIE DE PAGINA-->\n");
       out.write("        <footer>\n");
       out.write("            <p>© 2018<a style=\"color:#0a93a6; text-decoration:none;\" href=\"#\"> DKD-Ingenieria Informática</a>, Derechos Reservados.</p>\n");
@@ -153,9 +146,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n");
       out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n");
       out.write("        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\" integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\"></script>    \n");
-      out.write("\n");
       out.write("    </body>\n");
-      out.write("\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
