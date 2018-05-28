@@ -19,7 +19,7 @@ public class consultas {
     ResultSet rs = null;
     ResultSet rs2 = null;
     String usuario = "root";
-    String contraseña = "1234";
+    String contraseña = "";
 
     public String validacionDatosUsuario(String user, String pass) {
         String mensaje = null;
