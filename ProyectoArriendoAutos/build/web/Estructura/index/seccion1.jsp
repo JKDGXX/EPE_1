@@ -19,7 +19,7 @@
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="contacto.jsp">Contacto</a>
                     </li>
 
                     <li class="nav-item" id="opcionesAdministrador">
