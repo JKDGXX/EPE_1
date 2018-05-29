@@ -9,9 +9,12 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.jsp">Inicio</a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Vehículos</a>
+            </li>
 
             <li class="nav-item active">
-                <a class="nav-link" href="#">¿Quienes Somos?</a>
+                <a class="nav-link" href="quienesSomos.jsp">¿Quienes Somos?</a>
             </li>
 
             <li class="nav-item active">
