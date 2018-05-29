@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import gestionBD.mensajes;
 
 public class cliente {
 
@@ -20,6 +21,9 @@ public class cliente {
     String usuario = "root";
     String contraseña = "1234";
 
+    /*INSTANCIA CLASE MENSAJES*/
+    mensajes msg = new mensajes();
+
     /*INGRESO DE CLIENTES*/
     public String ingresoCliente(String nombre, String apellido, String telefono, String email, String direccion, String fechaNacimiento) {
         String mensaje = null;
@@ -28,7 +32,7 @@ public class cliente {
             conexion = DriverManager.getConnection(url, usuario, contraseña);
             sentencia = conexion.createStatement();
 
-            String SQL = "insert into cliente(nombre,apellido,teléfono,email,direccion,fecha_nacimiento)values ('" + nombre + "','" + apellido + "','" + telefono + "','" + email + "','" + direccion + "','" + fechaNacimiento + "')";
+            String SQL = "insert into(nombre,apellido,teléfono,email,direccion,fecha_nacimiento)values ('" + nombre + "','" + apellido + "','" + telefono + "','" + email + "','" + direccion + "','" + fechaNacimiento + "')";
             sentencia.execute(SQL);
 
             mensaje = "<script>alert('DATOS INGRESADOS CON EXITO !!!');"
@@ -38,9 +42,7 @@ public class cliente {
             sentencia.close();
             conexion.close();
         } catch (Exception Error) {
-            mensaje = "<script>alert('ERROR AL INGRESAR DATOS !!!');"
-                    + "location.href='ingresoCliente.jsp';"
-                    + "</script>";
+            mensaje = msg.errorException();
         }
 
         return mensaje;
@@ -66,9 +68,7 @@ public class cliente {
             conexion.close();
         } catch (Exception Error) {
 
-            mensaje = "<script> alert('ERROR AL ELIMINAR UN CLIENTE !!!'); "
-                    + "location.href='eliminarCliente.jsp';"
-                    + "</script>";
+            mensaje = msg.errorException();
 
         }
 
@@ -84,7 +84,7 @@ public class cliente {
             conexion = DriverManager.getConnection(url, usuario, contraseña);
             sentencia = conexion.createStatement();
 
-            String SQL = "update cliente set nombre ='" + nombre +"',apellido ='"+apellido +"',direccion ='" + direccion + "',teléfono='" + telefono + "',email='" + email + "',direccion='" + direccion + "' where id_cliente ='" + id + "'";
+            String SQL = "update cliente set nombre ='" + nombre + "',apellido ='" + apellido + "',direccion ='" + direccion + "',teléfono='" + telefono + "',email='" + email + "',direccion='" + direccion + "' where id_cliente ='" + id + "'";
             sentencia.executeUpdate(SQL);
 
             mensaje = "<script>"
@@ -95,9 +95,7 @@ public class cliente {
             conexion.close();
         } catch (Exception Error) {
 
-            mensaje = "<script> alert('ERROR AL MODIFICAR DATOS :c');"
-                    + "location.href='eliminarCliente.jsp';"
-                    + " </script>";
+            mensaje = msg.errorException();
 
         }
 

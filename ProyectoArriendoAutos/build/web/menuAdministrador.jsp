@@ -37,7 +37,7 @@
                                 <button class="dropdown-item" type="button">Detalles De La Cuenta</button>
                                 <button class="dropdown-item" type="button">Cambiar Contraseña</button>
                                 <button class="dropdown-item" type="button">Actualizar Datos</button>
-                                <button class="dropdown-item" type="button">Salir</button>
+                                <a><button class="dropdown-item" type="button">Salir</button></a>
                             </div>
                         </div>
                     </li>
