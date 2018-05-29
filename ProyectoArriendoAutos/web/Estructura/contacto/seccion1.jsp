@@ -1,2 +1,2 @@
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel=icon href=img/icono/logo.png sizes="5x5" type="image/png">
         <title>DKD - Contacto</title>
