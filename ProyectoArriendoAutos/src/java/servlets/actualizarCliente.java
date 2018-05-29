@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package servlets;
 
 import java.io.IOException;
@@ -13,26 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import gestionBD.cliente;
-/**
- *
- * @author Diego
- */
+import gestionBD.listarCliente;
+
 @WebServlet(name = "actualizarCliente", urlPatterns = {"/actualizarCliente"})
 public class actualizarCliente extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+ 
+    String valorBoton;
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
+       
+        valorBoton=request.getParameter("boton");
+       
         String id=request.getParameter("id");
         String nombre=request.getParameter("nombre");
         String apellido=request.getParameter("apellido");
@@ -41,15 +31,21 @@ public class actualizarCliente extends HttpServlet {
         String direccion=request.getParameter("direccion");
         
         cliente actualizarCliente=new cliente();
+
+        
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet actualizarCliente</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>" + actualizarCliente.actualizarCliente(nombre, apellido, telefono, email, direccion, id) + "</h1>");
+            if(valorBoton.equals("0")){
+             out.println("<h1>" + actualizarCliente.actualizarCliente(nombre, apellido, telefono, email, direccion, id) + "</h1>");   
+            }else if(valorBoton.equals("1")){
+                request.getSession().setAttribute("id", id);
+                response.sendRedirect("eliminarCliente.jsp");
+            }
             out.println("</body>");
             out.println("</html>");
         }

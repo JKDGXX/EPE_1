@@ -58,7 +58,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/estiloIndex.css\">\r\n");
       out.write('\r');
       out.write('\n');
-      out.write("<title>Inicio</title>\n");
+      out.write("<link rel=icon href=img/icono/logo.png sizes=\"5x5\" type=\"image/png\">\r\n");
+      out.write("<title>DKD</title>\r\n");
       out.write('\r');
       out.write('\n');
       out.write("<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n");
