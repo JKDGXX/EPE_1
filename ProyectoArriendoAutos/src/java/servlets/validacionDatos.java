@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import gestionBD.consultas;
+import gestionBD.validarDatos;
 
 /**
  *
@@ -23,7 +23,7 @@ public class validacionDatos extends HttpServlet {
    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        consultas validacion = new consultas();
+        validarDatos validacion = new validarDatos();
          String user = request.getParameter("usuario");
          String pass = request.getParameter("contrasena");
 

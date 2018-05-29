@@ -11,6 +11,16 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(6);
+    _jspx_dependants.add("/Estructura/index/bootstrapindex.jsp");
+    _jspx_dependants.add("/Estructura/index/seccion1.jsp");
+    _jspx_dependants.add("/Estructura/index/seccion2.jsp");
+    _jspx_dependants.add("/Estructura/index/seccion3.jsp");
+    _jspx_dependants.add("/Estructura/index/seccion4.jsp");
+    _jspx_dependants.add("/scripts.jsp");
+  }
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -41,20 +51,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>DKD Arriendo de Vehículos</title>\n");
-      out.write("\n");
-      out.write("        <!--LINKS BOOTSTRAP Y CSS LOCAL-->\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\" crossorigin=\"anonymous\">\n");
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/estiloIndex.css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <!--BARRA DE NAVEGACION-->\n");
-      out.write("        <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n");
+      out.write('\r');
+      out.write('\n');
+      out.write("<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n");
       out.write("            <a class=\"navbar-brand\" href=\"#\">\n");
       out.write("                <img src=\"img/icono/logo.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">DKD</a>\n");
       out.write("            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n");
@@ -63,7 +66,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n");
       out.write("                <ul class=\"navbar-nav\">\n");
       out.write("                    <li class=\"nav-item active\">\n");
-      out.write("                        <a class=\"nav-link\" href=\"#\">Inicio</a>\n");
+      out.write("                        <a class=\"nav-link\" href=\"index.jsp\">Inicio</a>\n");
       out.write("                    </li>\n");
       out.write("\n");
       out.write("                    <li class=\"nav-item active\">\n");
@@ -71,22 +74,21 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </li>\n");
       out.write("\n");
       out.write("                    <li class=\"nav-item active\">\n");
-      out.write("                        <a class=\"nav-link\" href=\"#\">¿Quienes Somos?</a>\n");
+      out.write("                        <a class=\"nav-link\" href=\"quienesSomos.jsp\">¿Quienes Somos?</a>\n");
       out.write("                    </li>\n");
       out.write("\n");
       out.write("                    <li class=\"nav-item active\">\n");
-      out.write("                        <a class=\"nav-link\" href=\"#\">Contacto</a>\n");
+      out.write("                        <a class=\"nav-link\" href=\"contacto.jsp\">Contacto</a>\n");
       out.write("                    </li>\n");
       out.write("\n");
       out.write("                    <li class=\"nav-item\" id=\"opcionesAdministrador\">\n");
-      out.write("                        <a class=\"nav-link\" href=\"#\">Administrador</a>\n");
+      out.write("                        <a class=\"nav-link\" href=\"login.jsp\">Administrador</a>\n");
       out.write("                    </li>\n");
       out.write("                </ul>\n");
       out.write("            </div>\n");
       out.write("        </nav>\n");
-      out.write("        <!--BARRA DE NAVEGACION-->\n");
-      out.write("\n");
-      out.write("        <!--CAROUSEL-->\n");
+      out.write('\r');
+      out.write('\n');
       out.write("        <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n");
       out.write("            <ol class=\"carousel-indicators\">\n");
       out.write("                <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n");
@@ -121,9 +123,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <span class=\"sr-only\">Next</span>\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
-      out.write("        <!--CAROUSEL-->\n");
-      out.write("\n");
-      out.write("        <div id=\"contenedor\">\n");
+      out.write('\r');
+      out.write('\n');
+      out.write("<div id=\"contenedor\">\n");
       out.write("            <div id=\"titulo\">\n");
       out.write("                <h1>¿Por qué elegir DKD?</h1>\n");
       out.write("            </div>\n");
@@ -143,20 +145,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <p>DKD tiene un vehículo de último modelo para satisfacer todas las necesidades: autos de todos los tamaños, camionetas, minivans y furgones de carga.</p>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
-      out.write("        \n");
-      out.write("        <!--PIE DE PAGINA-->\n");
+      out.write('\r');
+      out.write('\n');
       out.write("        <footer>\n");
       out.write("            <p>© 2018<a style=\"color:#0a93a6; text-decoration:none;\" href=\"#\"> DKD-Ingenieria Informática</a>, Derechos Reservados.</p>\n");
       out.write("        </footer>\n");
-      out.write("\n");
-      out.write("        <!--LINKS SCRIPTS-->\n");
+      out.write('\r');
+      out.write('\n');
       out.write("        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n");
       out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n");
       out.write("        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\" integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\"></script>    \n");
       out.write("\n");
-      out.write("    </body>\n");
-      out.write("\n");
-      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import gestionBD.consultas;
+import gestionBD.cliente;
 /**
  *
  * @author Diego
@@ -34,7 +34,7 @@ public class ingresoCliente extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        consultas ingreso=new consultas();
+        cliente c=new cliente();
         
         String nombre=request.getParameter("nombre");
         String apellido=request.getParameter("apellido");
@@ -52,7 +52,7 @@ public class ingresoCliente extends HttpServlet {
             out.println("<title>Servlet ingresoCliente</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>"+ingreso.ingresoCliente(nombre, apellido, telefono, correo, direccion, fechaNacimiento)+"</h1>");
+            out.println("<h1>"+c.ingresoCliente(nombre, apellido, telefono, correo, direccion, fechaNacimiento)+"</h1>");
             out.println("</body>");
             out.println("</html>");
         }

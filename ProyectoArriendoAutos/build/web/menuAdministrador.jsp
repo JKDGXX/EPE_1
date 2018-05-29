@@ -1,15 +1,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="gestionBD.consultas"%>
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>DKD-Menu</title>
+        <title>DDK-Menu</title>
 
         <!--LINKS BOOTSTRAP Y CSS LOCAL-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/estiloMenuAdministrador.css">
-
     </head>
     <body>
 
@@ -25,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="index.jsp">Inicio</a>
                     </li>
 
                     <li class="nav-item active">
@@ -48,88 +46,30 @@
         </nav>
         <!--BARRA DE NAVEGACION-->
 
-        <!--FORMULARIO INGRESO CLIENTE-->
-       	<div  class="container" id="posicionFormulario">
-            <div class="row main">
-                <div class="main-login main-center">
-                    <h5 style="text-align: center;">Ingreso De Clientes</h5>
-                    <form method="post" action="ingresoCliente">
-
-                        <div class="form-group">
-                            <label for="nombre" class="cols-sm-2 control-label">Nombre</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="nombre" id="name"  placeholder="Ingrese Nombre"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="apellido" class="cols-sm-2 control-label">Apellido</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="apellido" id="email"  placeholder="Ingrese Apellido"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telefono" class="cols-sm-2 control-label">Ingrese Teléfono</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="telefono" id="username"  placeholder="Ingrese Telefono"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="correo" class="cols-sm-2 control-label">Correo</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="email" class="form-control" name="correo" id="password"  placeholder="Ingrese Correo"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="direccion" class="cols-sm-2 control-label">Direccion</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="direccion" id="confirm"  placeholder="Ingrese Direccion"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="fecha nacimiento" class="cols-sm-2 control-label">Fecha De Nacimiento</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="date" class="form-control" name="fechaNacimiento" id="confirm"  placeholder="Ingrese Fecha De Nacimiento"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="centroButton">
-                            <button type="submit">Ingresar</button>
-                        </div>
-
-                    </form>
+        <!--Menu-->
+        <form class="main-center">
+            <h5 id="tipoOpciones" ><strong>Cliente</strong></h5>
+            <div class="row colorOpcionesClientes">
+                <div>
+                    <a href="ingresoCliente.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones">Ingresar Clientes</button></a>
                 </div>
+                <div>
+                    <a href="eliminarCliente.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones">Eliminar y Actualizar Clientes</button></a>
+                </div> 
+
+                <div>
+                    <a href="verCliente.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones">Ver Clientes</button></a>
+                </div> 
             </div>
-        </div>
-        <!--FORMULARIO INGRESO CLIENTE-->
+        </form>
+
+        <!--MENU-->
 
 
 
-       <!--PIE DE PAGINA-->
+        <!--PIE DE PAGINA-->
         <footer>
-            <p>© 2018<a style="color:#0a93a6; text-decoration:none;" href="#"> DKD-Ingenieria Informática</a>, Derechos Reservados.</p>
+            <p>© 2018<a style="color:#0a93a6; text-decoration:none;" href="#"> DDK-Ingenieria Informatica</a>, Derechos Reservados.</p>
         </footer>
         <!--LINKS SCRIPTS-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

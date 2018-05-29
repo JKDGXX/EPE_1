@@ -1,0 +1,82 @@
+body{
+    background-color: #ddf7f3;
+}
+
+#opcionesAdministrador{
+    position: absolute;
+    right: 3px
+}
+.formularioEliminarCliente{
+    margin-left: 100px;
+    border:4px solid white;
+    width: 500px;
+    height: 300px;
+    background-color: #009edf;
+    border-radius: 24px;
+    margin-top: 30px;
+    color: #FFF;
+    text-shadow: none;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+}
+.formularioActualizarCliente{
+    margin-left: 750px;
+    border:4px solid white;
+    width: 500px;
+    height: 395px;
+    background-color: #009edf;
+    border-radius: 24px;
+    margin-top: -300px;
+    color: #FFF;
+    text-shadow: none;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+}
+#posicionTabla{
+    
+    margin-top: 20px;
+    
+}
+label{
+    display: inline-block;
+    width: 115px;
+}
+#div{
+    text-align: center;
+}
+#input{
+
+    text-align: center;
+    margin-top: 120px;
+    width: 80px;
+    
+}
+#posicionCamposActualizarCliente{
+    margin-top: 20px;
+    text-align: center;
+}
+button{
+    
+    margin-left: 4px;
+    margin-top: -3px;
+}
+
+footer{
+    background-color: #f5f4f4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+    padding: 40px;
+}
+
+footer p {
+    color:black;
+    margin: 0px;
+    line-height: 100%;
+}
