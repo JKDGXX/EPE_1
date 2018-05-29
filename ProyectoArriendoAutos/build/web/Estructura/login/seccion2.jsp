@@ -1,34 +1,29 @@
-<div  class="container" >
-    <div class="row main">
-        <div class="main-login main-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="img/icono/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">DKD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.jsp">Inicio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Vehículos</a>
+            </li>
 
-            <form method="post" action="validacionDatos">
+            <li class="nav-item active">
+                <a class="nav-link" href="quienesSomos.jsp">¿Quienes Somos?</a>
+            </li>
 
-                <div class="form-group" id="tamañoInput">
-                    <label for="usuario" class="cols-sm-2 control-label"><strong>Usuario</strong></label>
-                    <div class="cols-sm-10" >
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" name="usuario" id="name"  placeholder="Ingrese Usuario"/>
-                        </div>
-                    </div>
-                </div>
+            <li class="nav-item active">
+                <a class="nav-link" href="contacto.jsp">Contacto</a>
+            </li>
 
-                <div class="form-group" id="tamañoInput">
-                    <label for="contraseña" class="cols-sm-2 control-label"><strong>Contraseña</strong></label>
-                    <div class="cols-sm-10">
-                        <div class="input-group" >
-                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                            <input type="password" class="form-control" name="contrasena" id="email"  placeholder="Ingrese Contraseña"/>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="centroButton">
-                    <button type="submit"><strong>INGRESAR</strong></button>
-                </div>
-
-            </form>
-        </div>
+            <li class="nav-item" id="opcionesAdministrador">
+                <a class="nav-link" href="login.jsp">Administrador</a>
+            </li>
+        </ul>
     </div>
-</div>
+</nav>

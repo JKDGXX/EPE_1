@@ -3,7 +3,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <div class="container" id="posicionTabla">
-        
+            <h2 style="text-align: center;">Clientes</h2>
             <table class="table">
                 <%
                     Connection conexion = null;
@@ -65,11 +65,7 @@
                 %>
             </table>
         </div>
-            
-            <div style="text-align: center;">                           
+
+        <div style="text-align: center;">                           
             <a href="menuAdministrador.jsp"><button type="submit" class="btn btn-secondary">Volver</button></a>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
