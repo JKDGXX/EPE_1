@@ -23,7 +23,7 @@
                     </li>
 
                     <li class="nav-item" id="opcionesAdministrador">
-                        <a class="nav-link" href="#">Administrador</a>
+                        <a class="nav-link" href="login.jsp">Administrador</a>
                     </li>
                 </ul>
             </div>
