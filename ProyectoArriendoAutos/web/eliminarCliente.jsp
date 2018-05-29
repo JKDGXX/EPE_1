@@ -7,3 +7,4 @@
 <%@include file="Estructura/eliminarCliente/seccion4.jsp" %>
 <%@include file="Estructura/eliminarCliente/seccion5.jsp" %>
 <%@include file="Estructura/eliminarCliente/seccion6.jsp" %>
+<%@include file="scripts.jsp" %>
