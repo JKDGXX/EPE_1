@@ -32,7 +32,7 @@ public class cliente {
             conexion = DriverManager.getConnection(url, usuario, contraseña);
             sentencia = conexion.createStatement();
 
-            String SQL = "insert into(nombre,apellido,teléfono,email,direccion,fecha_nacimiento)values ('" + nombre + "','" + apellido + "','" + telefono + "','" + email + "','" + direccion + "','" + fechaNacimiento + "')";
+            String SQL = "insert into cliente(nombre,apellido,teléfono,email,direccion,fecha_nacimiento)values ('" + nombre + "','" + apellido + "','" + telefono + "','" + email + "','" + direccion + "','" + fechaNacimiento + "')";
             sentencia.execute(SQL);
 
             mensaje = "<script>alert('DATOS INGRESADOS CON EXITO !!!');"
@@ -42,7 +42,7 @@ public class cliente {
             sentencia.close();
             conexion.close();
         } catch (Exception Error) {
-            mensaje = msg.errorException();
+            mensaje = msg.errorExceptionIngresoCliente();
         }
 
         return mensaje;
@@ -68,7 +68,7 @@ public class cliente {
             conexion.close();
         } catch (Exception Error) {
 
-            mensaje = msg.errorException();
+            mensaje = msg.errorExceptionEliminarCliente();
 
         }
 
@@ -95,7 +95,7 @@ public class cliente {
             conexion.close();
         } catch (Exception Error) {
 
-            mensaje = msg.errorException();
+            mensaje = msg.errorExceptionActualizarCliente();
 
         }
 

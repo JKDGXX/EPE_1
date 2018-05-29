@@ -34,10 +34,12 @@
                         <div class="btn-group dropleft">
                             <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/icono/icono2.png" width="20" height="20" alt="opcion"></button>
                             <div class="dropdown-menu">
+                                <form action="recibeBoton" method="post">
                                 <button class="dropdown-item" type="button">Detalles De La Cuenta</button>
                                 <button class="dropdown-item" type="button">Cambiar Contraseña</button>
                                 <button class="dropdown-item" type="button">Actualizar Datos</button>
-                                <a><button class="dropdown-item" type="button">Salir</button></a>
+                                <button class="dropdown-item" type="sumbit" name="boton" value="3">Salir</button>
+                                </form>
                             </div>
                         </div>
                     </li>
