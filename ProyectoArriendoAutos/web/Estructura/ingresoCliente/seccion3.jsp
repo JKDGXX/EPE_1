@@ -2,7 +2,7 @@
             <div class="row main">
                 <div class="main-login main-center">
                     <h5 style="text-align: center;">Ingreso De Clientes</h5>
-                    <form method="post" action="ingresoCliente">
+                    <form method="post" action="validacion">
 
                         <div class="form-group">
                             <label for="nombre" class="cols-sm-2 control-label">Nombre</label>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div style="text-align: center;">
-                            <button type="submit" class="btn btn-secondary">Ingresar</button>
+                            <button type="submit" name="boton" value="1" class="btn btn-secondary">Ingresar</button>
                         </div>
                     </form>
                 </div>

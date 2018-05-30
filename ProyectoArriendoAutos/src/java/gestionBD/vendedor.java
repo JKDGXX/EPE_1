@@ -10,7 +10,7 @@ import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
-public class validarDatos {
+public class vendedor {
 
     Connection conexion = null;
     Statement sentencia = null;
@@ -22,7 +22,7 @@ public class validarDatos {
     String contraseña = "1234";
 
     /*VALIDACION DATOS LOGIN*/
-    public String validacionDatosUsuario(String user, String pass) {
+    public String validacionDatosVendedor(String user, String pass) {
         String mensaje = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");

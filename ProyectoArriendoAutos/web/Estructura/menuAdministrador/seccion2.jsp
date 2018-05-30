@@ -21,7 +21,7 @@
                                 <form action="recibeBoton" method="post">
                                 <button class="dropdown-item" type="button">Detalles De La Cuenta</button>
                                 <button class="dropdown-item" type="button">Cambiar Contraseña</button>
-                                <button class="dropdown-item" type="button">Actualizar Datos</button>
+                                <button class="dropdown-item" type="submit" name="boton" value="6">Actualizar Datos</button>
                                 <button class="dropdown-item" type="sumbit" name="boton" value="3">Salir</button>
                                 </form>
                             </div>

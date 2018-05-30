@@ -1,13 +1,11 @@
-<%@page import="gestionBD.listarCliente"%>
+<%@page import="gestionBD.cliente"%>
 
 <%
     String id_cliente = (String) session.getAttribute("id");
-    listarCliente listar = new listarCliente(id_cliente);
-    
-
+    cliente listar = new cliente(id_cliente);
 %> 
 
-<form action="actualizarCliente" method="post" class="formularioActualizarCliente">
+<form action="validacion" method="post" class="formularioActualizarCliente">
 
     <div id="posicionCamposActualizarCliente">
         <label for="id"><strong>ID</strong></label>
@@ -28,7 +26,7 @@
     </div>
     <div id="posicionCamposActualizarCliente">
         <label for="id"><strong>Email</strong></label>
-        <input  type="text" name="email" value="<%=listar.getEmail()%>">
+        <input  type="text" name="correo" value="<%=listar.getEmail()%>">
     </div>
     <div id="posicionCamposActualizarCliente">
         <label for="id"><strong>Direccion</strong></label>
@@ -36,8 +34,9 @@
     </div>
 
     <div style="text-align: center; margin-top: 10px;">
-        <button type="submit" class="btn btn-secondary" name="boton" value="0">Actualizar</button>
-        <button type="submit" class="btn btn-secondary" name="boton" value="1">Listar</button>
+        <button type="submit" class="btn btn-secondary" name="boton" value="4">Listar</button>
+        <button type="submit" class="btn btn-secondary" name="boton" value="5">Actualizar</button>
+        
     </div>
 </form>
 

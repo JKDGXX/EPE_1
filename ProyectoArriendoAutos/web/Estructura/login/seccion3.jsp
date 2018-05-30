@@ -2,7 +2,7 @@
     <div class="row main">
         <div class="main-login main-center">
 
-            <form method="post" action="validacionDatos">
+            <form method="post" action="validacion">
 
                 <div class="form-group" id="tamañoInput">
                     <label for="usuario" class="cols-sm-2 control-label"><strong>Usuario</strong></label>
@@ -25,7 +25,7 @@
                 </div>
 
                 <div id="centroButton">
-                    <button type="submit"><strong>INGRESAR</strong></button>
+                    <button type="submit" name="boton" value="0"><strong>Ingresar</strong></button>
                 </div>
 
             </form>
