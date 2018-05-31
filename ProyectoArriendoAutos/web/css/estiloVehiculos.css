@@ -1,6 +1,6 @@
 #altura_img_carrousel{
 
-    height:480px;
+    height:550px;
 }
 div#contenedor{
     background:#009edf;
@@ -89,6 +89,7 @@ footer p {
 
 .listings{
     padding: 100px 0;
+    margin-left: 50px;
 }
 
 .listings ul.properties_list{
@@ -224,7 +225,7 @@ footer p {
 }
 
 .listings ul.properties_list li:nth-child(3n+0){
-    margin: 0 7.272727272727273% 7.272727272727273% 0;
+    margin: 0 10% 7.272727272727273% 0;
 }
 
 .listings ul.properties_list li:nth-child(2n+0){

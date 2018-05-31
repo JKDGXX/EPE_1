@@ -22,7 +22,14 @@
 						<h1>
 							<a href="#">Chevrolet Captiva</a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+                                            <h2>Detalles<br> <span class="property_size"> 
+                                                    Cantidad de personas: 7<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 0<br>
+                                                    Maletas Pequeñas: 0<br>
+                                                    Transmision: Automatica/Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.4</span></h2>
 					</div>
 				</li>
 				<li>
@@ -37,7 +44,7 @@
 						<h2>Detalles<span class="property_size">(288ftsq)</span></h2>
 					</div>
 				</li>
-				<li>
+                                <li >
 					<a href="#">
 						<img src="img/vehiculos/spark.png" id="tam" alt="" title="" class="property_img"/>
 					</a>
@@ -75,24 +82,24 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/property_1.jpg" id="tam" alt="" title="" class="property_img"/>
+						<img src="img/vehiculos/celysee.png" id="tam" alt="" title="" class="property_img"/>
 					</a>
-					<span class="price">$</span>
+					<span class="price">$40.000 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Auto</a>
+							<a href="#">C1-Peugeot 301 MT </a>
 						</h1>
 						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
 					</div>
 				</li>
 				<li>
 					<a href="#">
-                                            <img src="img/property_2.jpg" id="tam" alt="" title="" class="property_img"/>
+                                            <img src="img/vehiculos/peugeot-108.png" id="tam" alt="" title="" class="property_img"/>
 					</a>
-					<span class="price">$</span>
+					<span class="price">$48.900 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Auto</a>
+							<a href="#">Peugeot 108</a>
 						</h1>
 						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
 					</div>
