@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import gestionBD.vendedor;/*IMPORTACION CLASE VALIDARDATOS*/
 import gestionBD.cliente;/*IMPORTACION CLASE CLIENTE*//*IMPORTACION CLASE CLIENTE*/
+import gestionBD.contacto;/*IMPORTACION CLASE CONTACTO*/
 
 @WebServlet(name = "validacion", urlPatterns = {"/validacion"})
 public class validacion extends HttpServlet {
@@ -25,6 +26,11 @@ public class validacion extends HttpServlet {
     String correo;
     String direccion;
     String fechaNacimiento;
+    /*VARIABLES DE FORMULARIO CONTACTO*/
+    String nom;
+    String ape;
+    String email;
+    String mensaj;
 
     /*VARIABLE ID CLIENTE DE FORMULARIO PARA ELIMINAR UN CLIENTE*/
     String idCliente;
@@ -32,6 +38,8 @@ public class validacion extends HttpServlet {
     vendedor validarLogin = new vendedor();
     /*INSTANCIA CLASE CLIENTE.JAVA*/
     cliente cientesOpciones = new cliente();
+    /*INSTANCIA CLASE CONTACTO.JAVA*/
+    contacto contact = new contacto();
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -43,6 +51,12 @@ public class validacion extends HttpServlet {
             /*REQUEST USUARIO Y CONTRASEÑA*/
             user = request.getParameter("usuario");
             pass = request.getParameter("contrasena");
+            
+            /*REQUEST CONTACTO*/
+            nom = request.getParameter("nom");
+            ape = request.getParameter("ape");
+            email = request.getParameter("email");
+            mensaj = request.getParameter("mensaj");
 
             /*REQUEST NOMBRE,APELLIDO,TELEFONO,CORREO,DIRECCION,FECHAMACIMIENTO*/
             nombre = request.getParameter("nombre");
@@ -77,6 +91,8 @@ public class validacion extends HttpServlet {
                 out.println("<h1>"+this.cientesOpciones.actualizarCliente(nombre, apellido, telefono, correo, direccion, idCliente));
             } else if (this.valorBoton.equals("6")){
                 out.println("<h1>");
+            } else if (this.valorBoton.equals("Enviar")) {
+                out.println("<h1>"+this.contact.mensajeContacto(nom, ape, email, mensaj)+"</h1>");
             }
             out.println("</body>");
             out.println("</html>");
