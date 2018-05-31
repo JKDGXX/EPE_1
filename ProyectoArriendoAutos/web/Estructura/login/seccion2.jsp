@@ -10,7 +10,7 @@
                 <a class="nav-link" href="index.jsp">Inicio</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Vehículos</a>
+                <a class="nav-link" href="vehiculos.jsp">Vehículos</a>
             </li>
 
             <li class="nav-item active">

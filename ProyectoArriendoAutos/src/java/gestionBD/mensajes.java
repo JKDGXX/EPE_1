@@ -57,6 +57,10 @@ public class mensajes {
     }
 
     String errorExceptionmensajeContacto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
+        String mensaje = "<script>alert('ERROR AL ENVIAR DATOS !!!');"
+                + "location.href='contacto.jsp';"
+                + "</script>";
+
+        return mensaje;    }
 }
