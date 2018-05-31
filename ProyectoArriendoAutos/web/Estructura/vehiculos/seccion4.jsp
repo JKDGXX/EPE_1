@@ -10,7 +10,14 @@
 						<h1>
 							<a href="#">Audi A4</a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 2<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Automatica<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.0</span></h2>
 					</div>
 				</li>
 				<li>
@@ -22,12 +29,12 @@
 						<h1>
 							<a href="#">Chevrolet Captiva</a>
 						</h1>
-                                            <h2>Detalles<br> <span class="property_size"> 
+                                            <h2>Detalles <br> <span class="property_size"> 
                                                     Cantidad de personas: 7<br>
                                                     Puertas: 5<br>
                                                     Maletas Grandes: 0<br>
                                                     Maletas Pequeñas: 0<br>
-                                                    Transmision: Automatica/Manual<br>
+                                                    Transmision: Manual<br>
                                                     Aire Acondicionado: Si<br>
                                                     Motor: 2.4</span></h2>
 					</div>
@@ -41,7 +48,14 @@
 						<h1>
 							<a href="#">Chevrolet Sail</a>
 						</h1>
-						<h2>Detalles<span class="property_size">(288ftsq)</span></h2>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 1<br>
+                                                    Maletas Pequeñas: 1<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 1.6</span></h2>
 					</div>
 				</li>
                                 <li >
@@ -53,7 +67,14 @@
 						<h1>
 							<a href="#">Chevrolet Spark</a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 4<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 1<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 1.6</span></h2>
 					</div>
 				</li>
 				<li>
@@ -65,7 +86,14 @@
 						<h1>
 							<a href="#">Renault Symbol</a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 1<br>
+                                                    Maletas Pequeñas: 1<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 1.6</span></h2>
 					</div>
 				</li>
 				<li>
@@ -77,7 +105,14 @@
 						<h1>
 							<a href="#">TOYOTA Yaris Sedan </a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 1<br>
+                                                    Maletas Pequeñas: 1<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.4</span></h2>
 					</div>
 				</li>
 				<li>
@@ -89,7 +124,14 @@
 						<h1>
 							<a href="#">C1-Peugeot 301 MT </a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+                                            <h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 5<br>
+                                                    Maletas Grandes: 2<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.4</span></span></h2>
 					</div>
 				</li>
 				<li>
@@ -101,7 +143,14 @@
 						<h1>
 							<a href="#">Peugeot 108</a>
 						</h1>
-						<h2>Detalles <span class="property_size">(288ftsq)</span></h2>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 3<br>
+                                                    Maletas Grandes: 0<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 1.6</span></h2>
 					</div>
 				</li>
 			</ul>

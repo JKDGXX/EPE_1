@@ -4,12 +4,17 @@
                 <div>
                     <a href="ingresoCliente.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones">Ingresar Clientes</button></a>
                 </div>
+                
                 <div>
                     <a href="eliminarCliente.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones">Eliminar y Actualizar Clientes</button></a>
                 </div> 
 
                 <div>
                     <a href="verCliente.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones">Ver Clientes</button></a>
+                </div> 
+                
+                <div>
+                    <a href="verContacto.jsp" ><button type="button" class="btn btn-dark" id="buttonOpciones">Ver Comentarios</button></a>
                 </div> 
             </div>
         </form>
