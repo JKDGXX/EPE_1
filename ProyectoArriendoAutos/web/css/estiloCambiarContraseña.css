@@ -9,9 +9,9 @@ body{
 #formularioCambiarContraseña{
     border:4px solid white;
     width: 440px;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 70px;
     background-color: #009edf;
     border-radius: 25px;
     text-shadow: none;
@@ -48,4 +48,24 @@ input{
 }
 strong{
     color:white;
+}
+#inputUsuario{
+    background-color: #CCC;
+    
+}
+footer{
+    background-color: #f5f4f4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+    padding: 40px;
+}
+
+footer p {
+    color:black;
+    margin: 0px;
+    line-height: 100%;
 }

@@ -69,3 +69,10 @@
         <div style="text-align: center;">                           
             <a href="menuAdministrador.jsp"><button type="submit" class="btn btn-secondary">Volver</button></a>
         </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>

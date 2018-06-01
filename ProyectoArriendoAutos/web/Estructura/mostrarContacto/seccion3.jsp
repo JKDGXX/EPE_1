@@ -3,7 +3,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <div class="container" id="posicionTabla">
-            <h2 style="text-align: center;">Clientes</h2>
+            <h2 style="text-align: center;">Mensajes</h2>
             <table class="table">
                 <%
                     Connection conexion = null;
@@ -12,7 +12,7 @@
                     String nombreBD = "arriendoauto";
                     String url = "jdbc:mysql://localhost:3306/" + nombreBD;
                     String usuario = "root";
-                    String contraseña = "";
+                    String contraseña = "1234";
 
                     try {
                         Class.forName("com.mysql.jdbc.Driver");
@@ -63,3 +63,5 @@
         <div style="text-align: center;">                           
             <a href="menuAdministrador.jsp"><button type="submit" class="btn btn-secondary">Volver</button></a>
         </div>
+       
+    
