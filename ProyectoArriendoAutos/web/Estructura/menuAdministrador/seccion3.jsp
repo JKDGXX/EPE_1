@@ -25,7 +25,7 @@
             <a href="ingresarVehiculos.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones1">Ingresar Vehiculos</button></a>
         </div>
     </div>
-    <h5 id="tipoOpciones"> <strong>Ingresar Factura</strong></h5>
+    <h5 id="tipoOpciones"> <strong>Factura</strong></h5>
     <div class="row colorOpcionesClientes3" id="posicionIngresarClientes">
         <div>
             <a href="ingresarFactura.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones1">Ingresar Factura</button></a>
