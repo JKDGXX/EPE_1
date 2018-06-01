@@ -153,6 +153,45 @@
                                                     Motor: 1.6</span></h2>
 					</div>
 				</li>
+                                <li>
+					<a href="#">
+                                            <img src="img/vehiculos/RenaultKangoo.jpg" id="tam" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">$36.990 Diario</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Renault Kangoo ZE Furgon</a>
+						</h1>
+						<h2>Detalles <br><span class="property_size">
+                                                    Tipo de motor: Eléctrico<br>
+                                                    Cantidad de asientos: 2<br>
+                                                    Puertas: 5<br>
+                                                    Potencia (Hp) = 59<br>
+                                                    Velocidad máxima (km/h) = 130<br>
+                                                    Batería (kWh) = 22<br>
+                                                    Tiempo de carga (hrs) = 0,5 a 9<br>
+                                                    Costo de energía eléctrica durante 5 años = $1279000</span></h2>
+					</div>
+				</li>
+                                <li>
+					<a href="#">
+                                            <img src="img/vehiculos/HyundaiIoniq.png" id="tam" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">$48.900 Diario</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Peugeot 108</a>
+						</h1>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 3<br>
+                                                    Maletas Grandes: 0<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 1.6</span></h2>
+					</div>
+				</li>
 			</ul>
 			<div class="more_listing">
 				<a href="#" class="more_listing_btn">Ver Más</a>
