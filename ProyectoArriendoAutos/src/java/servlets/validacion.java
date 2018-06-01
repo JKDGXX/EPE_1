@@ -14,6 +14,7 @@ import gestionBD.mensajes;/*IMPORTACION CLASE MENSAJES*/
 
 import gestionBD.cliente;/*IMPORTACION CLASE CLIENTE*//*IMPORTACION CLASE CLIENTE*/
 import gestionBD.contacto;/*IMPORTACION CLASE CONTACTO*/
+import gestionBD.vehiculos;/*IMPORTACION CLASE VEHICULOS*/
 
 
 
@@ -32,7 +33,12 @@ public class validacion extends HttpServlet {
     String correo;
     String direccion;
     String fechaNacimiento;
-
+    /*VARIABLES INGRESO VEHICULOS*/
+    String tipo;
+    String marca;
+    String color;
+    String modelo;
+    
     String contraseñaActual;
     String contraseñaNueva;
 
@@ -44,6 +50,8 @@ public class validacion extends HttpServlet {
     mensajes msg = new mensajes();
     /*INSTANCIA CLASE VALIDARDATOS.JAVA*/
     vendedor validarLogin = new vendedor();
+    /*INSTANCIA VEHICULOS*/
+    vehiculos v = new vehiculos();
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -70,8 +78,12 @@ public class validacion extends HttpServlet {
             contraseñaNueva = request.getParameter("contrasenaNueva");
             /*INSTANCIA CLASE LISTARCLIENTE.JAVA CON PARAMETRO ID*/
             cliente verDatos = new cliente(idCliente);
-
             /*INTANCIA CLASE */
+            
+            tipo = request.getParameter("tipo");
+            marca = request.getParameter("marca");
+            color = request.getParameter("color");
+            modelo = request.getParameter("modelo");
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -106,6 +118,8 @@ public class validacion extends HttpServlet {
                 response.sendRedirect("detallesCuenta.jsp");
             } else if (this.valorBoton.equals("actualizarDatos")) {
                 response.sendRedirect("");
+            } else if (this.valorBoton.equals("7")) {
+                out.println("<h1>" + this.v.ingresoVehiculos(tipo, marca, color, modelo));
             }
             out.println("</body>");
             out.println("</html>");
