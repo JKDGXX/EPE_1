@@ -180,16 +180,17 @@
 					<span class="price">$48.900 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Peugeot 108</a>
+							<a href="#">Hyundai - Ioniq 1.6</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
-                                                    Cantidad de personas: 5<br>
-                                                    Puertas: 3<br>
-                                                    Maletas Grandes: 0<br>
-                                                    Maletas Pequeñas: 2<br>
-                                                    Transmision: Manual<br>
-                                                    Aire Acondicionado: Si<br>
-                                                    Motor: 1.6</span></h2>
+                                                    Tipo de motor: Eléctrico<br>
+                                                    Cantidad de asientos: 5<br>
+                                                    Puertas: 5<br>
+                                                    Potencia (Hp) = 118<br>
+                                                    Velocidad máxima (km/h) = 165<br>
+                                                    Batería (kWh) = 28<br>
+                                                    Tiempo de carga (hrs) = 0,5 a 7<br>
+                                                    Costo de energía eléctrica durante 5 años = $825000</span></h2>
 					</div>
 				</li>
 			</ul>
