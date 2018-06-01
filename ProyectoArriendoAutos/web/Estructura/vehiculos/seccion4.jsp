@@ -155,42 +155,40 @@
 				</li>
                                 <li>
 					<a href="#">
-                                            <img src="img/vehiculos/RenaultKangoo.jpg" id="tam" alt="" title="" class="property_img"/>
+                                            <img src="img/vehiculos/nissan_gt-r.png" id="tam" alt="" title="" class="property_img"/>
 					</a>
-					<span class="price">$36.990 Diario</span>
+					<span class="price">$200.000 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Renault Kangoo ZE Furgon</a>
+							<a href="#">Nissan GT-R</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
-                                                    Tipo de motor: Eléctrico<br>
-                                                    Cantidad de asientos: 2<br>
-                                                    Puertas: 5<br>
-                                                    Potencia (Hp) = 59<br>
-                                                    Velocidad máxima (km/h) = 130<br>
-                                                    Batería (kWh) = 22<br>
-                                                    Tiempo de carga (hrs) = 0,5 a 9<br>
-                                                    Costo de energía eléctrica durante 5 años = $1279000</span></h2>
+                                                    Cantidad de personas: 2<br>
+                                                    Puertas: 2<br>
+                                                    Maletas Grandes: 0<br>
+                                                    Maletas Pequeñas: 0<br>
+                                                    Transmision: Automatico<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.9</span></h2>
 					</div>
 				</li>
                                 <li>
 					<a href="#">
-                                            <img src="img/vehiculos/HyundaiIoniq.png" id="tam" alt="" title="" class="property_img"/>
+                                            <img src="img/vehiculos/kia-carens.png" id="tam" alt="" title="" class="property_img"/>
 					</a>
 					<span class="price">$48.900 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Hyundai - Ioniq 1.6</a>
+							<a href="#">Kia - Carens 1.7</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
-                                                    Tipo de motor: Eléctrico<br>
-                                                    Cantidad de asientos: 5<br>
+                                                    Cantidad de personas: 5<br>
                                                     Puertas: 5<br>
-                                                    Potencia (Hp) = 118<br>
-                                                    Velocidad máxima (km/h) = 165<br>
-                                                    Batería (kWh) = 28<br>
-                                                    Tiempo de carga (hrs) = 0,5 a 7<br>
-                                                    Costo de energía eléctrica durante 5 años = $825000</span></h2>
+                                                    Maletas Grandes: 0<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 1.9</span></h2>
 					</div>
 				</li>
 			</ul>
