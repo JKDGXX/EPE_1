@@ -4,3 +4,5 @@
 <%@include file="Estructura/ingresoVehiculos/seccion1.jsp" %>
 <%@include file="Estructura/ingresoVehiculos/seccion2.jsp" %>
 <%@include file="Estructura/ingresoVehiculos/seccion3.jsp" %>
+<%@include file="Estructura/ingresoVehiculos/seccion4.jsp" %>
+<%@include file="scripts.jsp" %>
