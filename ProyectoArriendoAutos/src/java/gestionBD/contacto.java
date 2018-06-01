@@ -25,7 +25,7 @@ public class contacto {
         String nombreBD = "arriendoauto";
         String url = "jdbc:mysql://localhost:3306/" + nombreBD;
         String usuario = "root";
-        String password = "";
+        String password = "1234";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

@@ -8,8 +8,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import gestionBD.vendedor;/*IMPORTACION CLASE VALIDARDATOS*/
+
+import gestionBD.cliente;/*IMPORTACION CLASE CLIENTE*/
+import gestionBD.mensajes;/*IMPORTACION CLASE MENSAJES*/
+
 import gestionBD.cliente;/*IMPORTACION CLASE CLIENTE*//*IMPORTACION CLASE CLIENTE*/
 import gestionBD.contacto;/*IMPORTACION CLASE CONTACTO*/
+
+
 
 @WebServlet(name = "validacion", urlPatterns = {"/validacion"})
 public class validacion extends HttpServlet {
@@ -27,13 +33,18 @@ public class validacion extends HttpServlet {
     String direccion;
     String fechaNacimiento;
 
+    String contraseñaActual;
+    String contraseñaNueva;
+
     /*VARIABLE ID CLIENTE DE FORMULARIO PARA ELIMINAR UN CLIENTE*/
     String idCliente;
     /*INSTANCIA CLASE VALIDARDATOS.JAVA*/
-    vendedor validarLogin = new vendedor();
-    /*INSTANCIA CLASE CLIENTE.JAVA*/
     cliente cientesOpciones = new cliente();
-    
+    /*INTANCIA DE LA CLASE MENSAJES*/
+    mensajes msg = new mensajes();
+    /*INSTANCIA CLASE VALIDARDATOS.JAVA*/
+    vendedor validarLogin = new vendedor();
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -54,8 +65,12 @@ public class validacion extends HttpServlet {
             fechaNacimiento = request.getParameter("fechaNacimiento");
             /*REQUEST ID FORMULARIO ELIMINAR CLIENTE*/
             idCliente = request.getParameter("id");
+
+            contraseñaActual = request.getParameter("contrasenaActual");
+            contraseñaNueva = request.getParameter("contrasenaNueva");
             /*INSTANCIA CLASE LISTARCLIENTE.JAVA CON PARAMETRO ID*/
             cliente verDatos = new cliente(idCliente);
+
             /*INTANCIA CLASE */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -64,7 +79,10 @@ public class validacion extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             if (this.valorBoton.equals("0")) {
-                out.println("<h1>" + this.validarLogin.validacionDatosVendedor(user, pass) + "</h1>");
+                out.println("<h1>" + validarLogin.validacionDatosVendedor(user, pass) + "</h1>");
+                request.getSession().setAttribute("usuario", user);
+                request.getSession().setAttribute("contrasena", pass);
+
             } else if (this.valorBoton.equals("1")) {
                 out.println("<h1>" + this.cientesOpciones.ingresoCliente(nombre, apellido, telefono, correo, direccion, fechaNacimiento) + "</h1>");
             } else if (this.valorBoton.equals("2")) {
@@ -75,9 +93,19 @@ public class validacion extends HttpServlet {
                 request.getSession().setAttribute("id", idCliente);
                 response.sendRedirect("eliminarCliente.jsp");
             } else if (this.valorBoton.equals("5")) {
-                out.println("<h1>"+this.cientesOpciones.actualizarCliente(nombre, apellido, telefono, correo, direccion, idCliente));
-            } else if (this.valorBoton.equals("6")){
-                out.println("<h1>");
+                out.println("<h1>" + this.cientesOpciones.actualizarCliente(nombre, apellido, telefono, correo, direccion, idCliente));
+            } else if (this.valorBoton.equals("6")) {
+                out.println("<h1>" + validarLogin.cambiarContraseñaUsuario(contraseñaNueva, contraseñaActual, user));
+
+                /*OPCIONES USUARIO*/
+            } else if (this.valorBoton.equals("cambiarContrasena")) {
+                response.sendRedirect("cambiarContrasena.jsp");
+            } else if (this.valorBoton.equals("salirCuenta")) {
+                out.println(msg.salirSesion());
+            } else if (this.valorBoton.equals("detallesCuenta")) {
+                response.sendRedirect("detallesCuenta.jsp");
+            } else if (this.valorBoton.equals("actualizarDatos")) {
+                response.sendRedirect("");
             }
             out.println("</body>");
             out.println("</html>");

@@ -6,13 +6,11 @@ form{
     width: 330px;
     height: 630px;
 }
-button:hover{
-    background-color: #f5f0f0;
-}
+
 
 #opcionesAdministrador{
     position: absolute;
-    right: 3px
+    right: -290px
 }
 
 #playground-container {
@@ -20,26 +18,12 @@ button:hover{
     overflow: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
-body, html{
-    height: 100%;
-    font-family: 'Oxygen', sans-serif;
-    background-size: cover;
-}
+
 
 .main{
     margin:50px 15px;
 }
 
-h1.title { 
-    font-size: 50px;
-    font-family: 'Passion One', cursive; 
-    font-weight: 400; 
-}
-
-hr{
-    width: 10%;
-    color: #fff;
-}
 
 .form-group{
     margin-bottom: 15px;
@@ -47,7 +31,6 @@ hr{
 
 label{
     margin-bottom: 15px;
-
 }
 
 input,input::-webkit-input-placeholder {

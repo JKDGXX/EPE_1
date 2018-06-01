@@ -153,44 +153,6 @@
                                                     Motor: 1.6</span></h2>
 					</div>
 				</li>
-                                <li>
-					<a href="#">
-                                            <img src="img/vehiculos/nissan_gt-r.png" id="tam" alt="" title="" class="property_img"/>
-					</a>
-					<span class="price">$200.000 Diario</span>
-					<div class="property_details">
-						<h1>
-							<a href="#">Nissan GT-R</a>
-						</h1>
-						<h2>Detalles <br><span class="property_size">
-                                                    Cantidad de personas: 2<br>
-                                                    Puertas: 2<br>
-                                                    Maletas Grandes: 0<br>
-                                                    Maletas Pequeñas: 0<br>
-                                                    Transmision: Automatico<br>
-                                                    Aire Acondicionado: Si<br>
-                                                    Motor: 2.9</span></h2>
-					</div>
-				</li>
-                                <li>
-					<a href="#">
-                                            <img src="img/vehiculos/kia-carens.png" id="tam" alt="" title="" class="property_img"/>
-					</a>
-					<span class="price">$48.900 Diario</span>
-					<div class="property_details">
-						<h1>
-							<a href="#">Kia - Carens 1.7</a>
-						</h1>
-						<h2>Detalles <br><span class="property_size">
-                                                    Cantidad de personas: 5<br>
-                                                    Puertas: 5<br>
-                                                    Maletas Grandes: 0<br>
-                                                    Maletas Pequeñas: 2<br>
-                                                    Transmision: Manual<br>
-                                                    Aire Acondicionado: Si<br>
-                                                    Motor: 1.9</span></h2>
-					</div>
-				</li>
 			</ul>
 			<div class="more_listing">
 				<a href="#" class="more_listing_btn">Ver Más</a>

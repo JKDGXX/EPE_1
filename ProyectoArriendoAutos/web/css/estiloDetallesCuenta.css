@@ -7,23 +7,21 @@ body{
     position: absolute;
     right: 3px
 }
-.main{
-    margin:50px 15px;
-}
 
-.main-center{
+
+#formularioDetalleCuenta{
     margin-top: 30px;
     margin: 0 auto;
-    padding: 10px 40px;
-    background-color: #009edf;
+    padding: 10px;
+    background:#009edf;
     color: #FFF;
     text-shadow: none;
     border-radius: 24px;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
-    height: 400px;
-    width: 800px;
+    height: 540px;
+    width: 400px;
     margin-top: 25px;
     border:4px solid ;
 }
@@ -35,7 +33,6 @@ body{
 
 footer{
     background-color: #f5f4f4;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -44,7 +41,6 @@ footer{
     color: #CCC;
     padding: 40px;
 }
-
 footer p {
     color:black;
     margin: 0px;
@@ -57,7 +53,7 @@ footer p {
 }
 #buttonOpciones{
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 .colorOpcionesClientes{
     border-radius: 23px;
@@ -69,4 +65,16 @@ footer p {
     text-align: center;
     font-size: 30px; 
     font-family: Impact, Charcoal, sans-serif;
+}
+label{
+    display: inline-block;
+    width: 200px;
+}
+#inputCampos{
+    text-align: center;
+}
+input{
+    border-radius: 15px;
+    text-align: center;
+    background-color: #CCC;
 }
