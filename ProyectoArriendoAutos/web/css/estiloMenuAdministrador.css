@@ -79,9 +79,20 @@ footer p {
     border:4px solid;
     width: 220px;
     margin-left: 250px;
+    
+}
+.colorOpcionesClientes3{
+    border-radius: 23px;
+    background-color: #e6e6e6;
+    padding: 8px;
+    border:4px solid;
+    width: 370px;
+    margin-left: 170px;
+    
 }
 #tipoOpciones{
     text-align: center;
     font-size: 30px; 
     font-family: Impact, Charcoal, sans-serif;
+    padding: 6px;
 }

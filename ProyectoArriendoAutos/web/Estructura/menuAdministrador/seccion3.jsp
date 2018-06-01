@@ -26,9 +26,12 @@
         </div>
     </div>
     <h5 id="tipoOpciones"> <strong>Ingresar Factura</strong></h5>
-    <div class="row colorOpcionesClientes2" id="posicionIngresarClientes">
+    <div class="row colorOpcionesClientes3" id="posicionIngresarClientes">
         <div>
-            <a href="ingresarVehiculos.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones1">Ingresar Factura</button></a>
+            <a href="ingresarFactura.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones1">Ingresar Factura</button></a>
+        </div>
+        <div>
+            <a href="verFactura.jsp"><button type="button" class="btn btn-dark" id="buttonOpciones1">Ver Factura</button></a>
         </div>
     </div>
 </form>

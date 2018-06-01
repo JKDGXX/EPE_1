@@ -14,8 +14,9 @@ import gestionBD.mensajes;/*IMPORTACION CLASE MENSAJES*/
 
 import gestionBD.cliente;/*IMPORTACION CLASE CLIENTE*//*IMPORTACION CLASE CLIENTE*/
 import gestionBD.contacto;/*IMPORTACION CLASE CONTACTO*/
-import gestionBD.vehiculos;/*IMPORTACION CLASE VEHICULOS*/
 
+import gestionBD.vehiculos;/*IMPORTACION CLASE VEHICULOS*/
+import gestionBD.factura;/*IMPORTACION CLASE FACTURA*/
 
 
 @WebServlet(name = "validacion", urlPatterns = {"/validacion"})
@@ -38,10 +39,16 @@ public class validacion extends HttpServlet {
     String marca;
     String color;
     String modelo;
-    
+    /*VARIABLES CONTRASEÑAACTUAL Y CONTRASEÑANUEVA PARA REQUEST*/
     String contraseñaActual;
     String contraseñaNueva;
 
+    /*VARIABLES PARA REQUEST FORMULARIO FACTURA*/
+    String idUsuario;
+    String idClienteFactura;
+    String idVehiculo;
+    String fecha;
+    String monto;
     /*VARIABLE ID CLIENTE DE FORMULARIO PARA ELIMINAR UN CLIENTE*/
     String idCliente;
     /*INSTANCIA CLASE VALIDARDATOS.JAVA*/
@@ -52,7 +59,8 @@ public class validacion extends HttpServlet {
     vendedor validarLogin = new vendedor();
     /*INSTANCIA VEHICULOS*/
     vehiculos v = new vehiculos();
-
+    /*INSTANCIA FACTURA*/
+    factura fct=new factura();
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -73,13 +81,18 @@ public class validacion extends HttpServlet {
             fechaNacimiento = request.getParameter("fechaNacimiento");
             /*REQUEST ID FORMULARIO ELIMINAR CLIENTE*/
             idCliente = request.getParameter("id");
-
+            /*REQUEST DATOS FORMULARIO CAMBIAR CONTRASEÑA*/
             contraseñaActual = request.getParameter("contrasenaActual");
             contraseñaNueva = request.getParameter("contrasenaNueva");
+            /*REQUEST DATOS FORMULARIO FACTURA*/
+            idUsuario=request.getParameter("idUsuario");
+            idClienteFactura=request.getParameter("idCliente");
+            idVehiculo=request.getParameter("idVehiculo");
+            fecha=request.getParameter("fecha");
+            monto=request.getParameter("monto");
             /*INSTANCIA CLASE LISTARCLIENTE.JAVA CON PARAMETRO ID*/
             cliente verDatos = new cliente(idCliente);
             /*INTANCIA CLASE */
-            
             tipo = request.getParameter("tipo");
             marca = request.getParameter("marca");
             color = request.getParameter("color");
@@ -120,6 +133,9 @@ public class validacion extends HttpServlet {
                 response.sendRedirect("");
             } else if (this.valorBoton.equals("7")) {
                 out.println("<h1>" + this.v.ingresoVehiculos(tipo, marca, color, modelo));
+            } else if(this.valorBoton.equals("8")){
+                
+                out.println(fct.ingresoCliente(this.idClienteFactura, this.idClienteFactura, this.idVehiculo, this.fecha, this.monto));
             }
             out.println("</body>");
             out.println("</html>");
