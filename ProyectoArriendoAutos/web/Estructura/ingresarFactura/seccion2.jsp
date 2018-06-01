@@ -1,3 +1,4 @@
+<%@page import="gestionBD.vendedor"%>
 <%
     String usuarioV = (String) session.getAttribute("usuario");
 %>
@@ -24,7 +25,6 @@
                         <div class="dropdown-menu">
                             <button class="dropdown-item" type="submit" name="boton" value="detallesCuenta">Detalles De La Cuenta</button>
                             <button class="dropdown-item" type="submit" name="boton" value="cambiarContrasena">Cambiar Contraseña</button>
-                            <button class="dropdown-item" type="submit" name="boton" value="actualizarDatos">Actualizar Datos</button>
                             <button class="dropdown-item" type="submit" name="boton" value="salirCuenta">Salir</button>
                         </div>
                     </form>

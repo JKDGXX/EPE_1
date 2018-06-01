@@ -3,7 +3,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <div class="container" id="posicionTabla">
-    <h2 style="text-align: center;">Clientes</h2>
+    <h2 style="text-align: center;">Factura</h2>
     <table class="table">
         <%
             Connection conexion = null;

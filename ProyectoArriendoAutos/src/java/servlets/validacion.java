@@ -49,6 +49,8 @@ public class validacion extends HttpServlet {
     String idVehiculo;
     String fecha;
     String monto;
+    
+    String idVendedor;
     /*VARIABLE ID CLIENTE DE FORMULARIO PARA ELIMINAR UN CLIENTE*/
     String idCliente;
     /*INSTANCIA CLASE VALIDARDATOS.JAVA*/

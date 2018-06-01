@@ -41,21 +41,21 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/vehiculos/sail.png" id="tam" alt="" title="" class="property_img"/>
+						<img src="img/vehiculos/ford-hybrid.jpg" id="tam" alt="" title="" class="property_img"/>
 					</a>
 					<span class="price">$24.900 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Chevrolet Sail</a>
+							<a href="#">Fored Hybrid</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
                                                     Cantidad de personas: 5<br>
                                                     Puertas: 5<br>
-                                                    Maletas Grandes: 1<br>
-                                                    Maletas Pequeñas: 1<br>
-                                                    Transmision: Manual<br>
+                                                    Maletas Grandes: 2<br>
+                                                    Maletas Pequeñas: 3<br>
+                                                    Transmision: Automatico<br>
                                                     Aire Acondicionado: Si<br>
-                                                    Motor: 1.6</span></h2>
+                                                    Motor: 2.6</span></h2>
 					</div>
 				</li>
                                 <li >
@@ -103,7 +103,7 @@
 					<span class="price">$23.900 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">TOYOTA Yaris Sedan </a>
+							<a href="#">KIA RIO </a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
                                                     Cantidad de personas: 5<br>
@@ -131,7 +131,7 @@
                                                     Maletas Pequeñas: 2<br>
                                                     Transmision: Manual<br>
                                                     Aire Acondicionado: Si<br>
-                                                    Motor: 2.4</span></span></h2>
+                                                    Motor: 2.4</span></h2>
 					</div>
 				</li>
 				<li>
@@ -142,6 +142,44 @@
 					<div class="property_details">
 						<h1>
 							<a href="#">Peugeot 108</a>
+						</h1>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 3<br>
+                                                    Maletas Grandes: 0<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Manual<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.2</span></h2>
+					</div>
+				</li>
+                                <li>
+					<a href="#">
+                                            <img src="img/vehiculos/chevrolet-volt.png" id="tam" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">$55.900 Diario</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Chevrolet Volt</a>
+						</h1>
+						<h2>Detalles <br><span class="property_size">
+                                                    Cantidad de personas: 5<br>
+                                                    Puertas: 3<br>
+                                                    Maletas Grandes: 1<br>
+                                                    Maletas Pequeñas: 2<br>
+                                                    Transmision: Automatico<br>
+                                                    Aire Acondicionado: Si<br>
+                                                    Motor: 2.0</span></h2>
+					</div>
+				</li>
+                                <li>
+					<a href="#">
+                                            <img src="img/vehiculos/toyota-verso.jpg" id="tam" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">$45.900 Diario</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Toyota Verso</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
                                                     Cantidad de personas: 5<br>

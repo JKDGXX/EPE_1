@@ -1,3 +1,11 @@
+<%@page import="gestionBD.vendedor"%>
+<%
+    String usuarioVe = (String) session.getAttribute("usuario");
+    String contraseñaV = (String) session.getAttribute("contrasena");
+    vendedor v = new vendedor(usuarioVe, contraseñaV);
+
+
+%>
 <div  class="container" id="posicionFormulario">
     <div class="row main">
         <div class="main-login main-center">
@@ -9,7 +17,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" name="idUsuario" id="name"  placeholder="Ingrese ID Usuario"/>
+                            <input style="text-align: center;" type="text" class="form-control" name="idUsuario" id="name"  placeholder="<%=v.idVendedor()%>" readonly = "readonly"/>
                         </div>
                     </div>
                 </div>

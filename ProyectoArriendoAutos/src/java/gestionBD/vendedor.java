@@ -28,6 +28,7 @@ public class vendedor {
     String correo;
     String direccion;
     String fechaNacimiento;
+    String idVendedor;
 
     public vendedor(String user, String pass) {
         verDetallesDeCuenta(user, pass);
@@ -92,7 +93,7 @@ public class vendedor {
             sentencia.executeUpdate(SQL);
 
             mensaje = "<script> alert('CONTRASEÑA ACTUALIZADA CON EXITO !!! ');"
-                    + "location.href='cambiarContrasena.jsp';"
+                    + "location.href='login.jsp';"
                     + "</script>";
 
             sentencia.close();
@@ -119,6 +120,7 @@ public class vendedor {
             rs = sentencia.executeQuery(SQL);
 
             while (rs.next()) {
+                this.idVendedor = rs.getString("id_usuario");
                 this.nombre = rs.getString("nombre");
                 this.apellido = rs.getString("apellido");
                 this.nombreUsuario = rs.getString("usuario");
@@ -140,33 +142,44 @@ public class vendedor {
 
         }
     }
-    
-    public String getNombre(){
-        
+
+    public String idVendedor() {
+
+        return this.idVendedor;
+    }
+
+    public String getNombre() {
+
         return this.nombre;
     }
-    public String getApellido(){
-        
+
+    public String getApellido() {
+
         return this.apellido;
     }
-    public String getNombreUsuario(){
-        
+
+    public String getNombreUsuario() {
+
         return this.nombreUsuario;
     }
-    public String getTelefono(){
-        
-       return this.telefono;
+
+    public String getTelefono() {
+
+        return this.telefono;
     }
-    public String getCorreo(){
-        
+
+    public String getCorreo() {
+
         return this.correo;
     }
-    public String getDireccion(){
-        
+
+    public String getDireccion() {
+
         return this.direccion;
     }
-    public String getFechaNacimiento(){
-        
+
+    public String getFechaNacimiento() {
+
         return this.fechaNacimiento;
     }
 }
