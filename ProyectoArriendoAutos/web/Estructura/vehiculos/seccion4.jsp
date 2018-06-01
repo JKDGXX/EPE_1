@@ -160,7 +160,7 @@
 					<span class="price">$36.990 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Renault Kangoo ZE Furgon</a>
+							<a href="#">Renault Kangoo ZE FurgonAAAAA</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
                                                     Tipo de motor: Eléctrico<br>
@@ -180,7 +180,7 @@
 					<span class="price">$48.900 Diario</span>
 					<div class="property_details">
 						<h1>
-							<a href="#">Peugeot 108</a>
+							<a href="#">Peugeot 108AAAA</a>
 						</h1>
 						<h2>Detalles <br><span class="property_size">
                                                     Cantidad de personas: 5<br>
