@@ -17,7 +17,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                            <input style="text-align: center;" type="text" class="form-control" name="idUsuario" id="name"  placeholder="<%=v.idVendedor()%>" readonly = "readonly"/>
+                            <input style="text-align: center;" type="text" class="form-control" name="idUsuario" id="name"  value="<%=v.idVendedor()%>" readonly = "readonly"/>
                         </div>
                     </div>
                 </div>

@@ -137,7 +137,7 @@ public class validacion extends HttpServlet {
                 out.println("<h1>" + this.v.ingresoVehiculos(tipo, marca, color, modelo));
             } else if(this.valorBoton.equals("8")){
                 
-                out.println(fct.ingresoCliente(this.idClienteFactura, this.idClienteFactura, this.idVehiculo, this.fecha, this.monto));
+                out.println(fct.ingresoCliente(this.idUsuario, this.idClienteFactura, this.idVehiculo, this.fecha, this.monto));
             }
             out.println("</body>");
             out.println("</html>");
